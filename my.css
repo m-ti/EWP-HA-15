@@ -1,0 +1,11 @@
+body {
+  font-family: Arial;
+}
+
+h3 {
+  margin-top: 50px;
+}
+
+.tooltip {
+  font-weight: bold;
+}

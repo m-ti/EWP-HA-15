@@ -1,0 +1,35 @@
+{
+	"data" : [
+		[
+			"git init",
+			"neues Repositorium erstellen",
+			"git init --bare"
+		],
+		[
+			"git clone",
+			"gesamtes Remote-Repositorium in ein lokales Verzeichnis kopieren",
+			"git clone https://github.com/suchmaske/EWP-Git-Example.git"
+		],
+		[
+			"git add",
+			"geänderte Datei für den Zwischenspeicher vormerken",
+			"git add index.html"
+
+		],
+		[
+			"git commit",
+			"Änderungen im Zwischenspeicher ablegen",
+			"git commit -m  \"tabelle in index.html hinzugefügt\""
+		],		
+		[
+			"git push",
+			"Änderungen aus dem lokalen Zwischenpeicher ins Repositorium hochladen",
+			"git push"
+		],
+		[
+			"git pull",
+			"Änderungen anderer aus dem Repositorium in das lokale Verzeichnis kopieren",
+			"git pull"
+		]
+	]
+}

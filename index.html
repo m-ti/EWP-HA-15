@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>EWP HA 15</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.css"></head>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="my.css">
 </head>
 <body>
-
-<!-- TODO: Erstellen Sie hier die nötigen Inhalte -->
+		
+	<div>
+		<h3>git Workflow</h3>
+		Über <span class="tooltip" title="git init --bare">git init</span> kann ein neues Repository erstellt werden, am Besten auf einem Server, auf den andere  zugreifen können. Eine gute Option ist auch, das zentrale Repository auf github zu erstellen, weil andere direkt über das Internet darauf zugreifen können.
+		Das zentrale Repositorium wird über <span class="tooltip" title="git clone https://github.com/suchmaske/EWP-Git-Example.git">git clone</span> auf den lokalen Rechner kopiert. Die Dateien können dann lokal bearbeitet werden.  Über <span class="tooltip" title="git add index.html">git add</span> (und den Dateiname) können bearbeitete Dateien zum "Staging" hinzugefügt werden. Alle Dateien im Staging  werden über den Befehl <span class="tooltip" title="git commit -m  &quot;tabelle in index.html hinzugefügt&quot;">git commit</span> in einem lokalen Zwischenspeicher abgelegt.  Über den Parameter  -m und einen Textstring wird eine Nachricht zu diesem Änderungsstand hinzugefügt, die beschreibt, was geändert wurde. 
+		"Commitete" Änderungsstände können über <span class="tooltip" title="git push">git push</span> auf das zentrale Repositorium hochgeladen werden. Wenn andere Personen Änderungen auf das Repositorium geladen haben, muss es nicht wieder komplett geklont werden,  um den neuen Stand lokal zu speichern. Stattdessen können über <span class="tooltip" title="git pull">git pull</span> nur die Änderungen ins lokale Verzeichnis gezogen werden.
+	</div>
+	
+	<div>
+	<h3>git Befehle</h3>
+		<table id="tabelle">
+			<thead>
+			<tr>
+				<th>Befehl</th>
+				<th>Wirkung</th>
+				<th>Beispiel</th>
+			</tr>
+			</thead>
+		</table>
+	</div>
+	
+	<div>
+	<h3>Mein Repositorium  auf Github</h3>
+	<a href="https://github.com/m-ti/EWP-HA-15"><img src="http://programminghistorian.org/images/GitHub-Mark-32px.png"/></a>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script src="my.js"></script>
 
 </body>
 </html>
